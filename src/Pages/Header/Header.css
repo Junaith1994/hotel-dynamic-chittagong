@@ -1,0 +1,6 @@
+.nav-container a {
+    text-decoration: none;
+    color: aliceblue;
+    margin-right: 2rem;
+    display: flex;
+}
