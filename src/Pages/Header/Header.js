@@ -14,7 +14,7 @@ const Header = () => {
     return (
         <Navbar collapseOnSelect expand="lg" data-bs-theme="dark" className="bg-body-tertiary mb-3">
             <Container>
-                <Navbar.Brand href="#home">Hotel Dynamic Chittagong</Navbar.Brand>
+                <Navbar.Brand as={Link} to="/">Hotel Dynamic Chittagong</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
