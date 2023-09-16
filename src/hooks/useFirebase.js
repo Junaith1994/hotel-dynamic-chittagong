@@ -58,7 +58,7 @@ const useFirebase = () => {
     const userSignOut = () => {
         signOut(auth)
             .then(() => {
-                setUser({});
+                setUser(null);
             })
     }
 
