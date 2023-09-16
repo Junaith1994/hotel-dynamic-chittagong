@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import useFirebase from '../../hooks/useFirebase';
 
 const Header = () => {
@@ -12,11 +12,11 @@ const Header = () => {
                 <Nav className="me-auto">
                     <Nav.Link href="#features">Facilities</Nav.Link>
                     {
-                        user ? <button onClick={userSignOut}>Sign-Out</button>
+                        user ? <Button variant="light" onClick={userSignOut}>Sign-Out</Button>
                             :
                             <Nav.Link href="/login">Login</Nav.Link>
                     }
-                    <h4 className='text-primary'>{user?.email}</h4>
+                    <p className='text-primary text-center fw-bold text-break'>{user?.email}</p>
                 </Nav>
             </Container>
         </Navbar>
